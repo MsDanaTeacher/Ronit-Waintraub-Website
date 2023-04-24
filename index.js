@@ -110,6 +110,8 @@ const projects = {
     },
 };
 
+
+
 //nav bar responsive functionality:
 $(".burger i").click(function () {
   $(".burger i").toggleClass("fa-times");
@@ -125,70 +127,75 @@ $(".burger i").click(function () {
 
 //map divs to portfolio page:
 
+
 $.each(projects, function (key, value) {
   let project = $(
-    `<div style="border: 25px solid ${value.color};background-color: ${value.color};" class="portfolio-outer-div"><div id=${key} class="project-tiles" style="background-color: ${value.color};"><p style="color: ${value.textcolor}">${value.name}</p><div class="portfolio-image-div"><img src=${value.image} id=${key + "-image"} /><p id=${key + "-problem-solution"}>${value.problem}<br/><br/>${value.solution}</p></div><a href=${value.link} target="_blank" style="background-color: ${value.color}">Learn More</a></div><h1 id=${key + "-headline"}>${value.tech}</h1></div>`
+    `<div style="border: 25px solid ${value.color};background-color: ${value.color};" class="portfolio-outer-div"><div id=${key} class="project-tiles" style="background-color: ${value.color};"><p style="color: ${value.textcolor}">${value.name}</p><div class="portfolio-image-div"><img src=${value.image} id=${key + "-image"} /><p id=${key + "-problem-solution"} style="display: none">${value.problem}<br/><br/>${value.solution}</p></div><a href=${value.link} target="_blank" style="background-color: ${value.color}">Learn More</a></div><h1 id=${key + "-headline"}>${value.tech}</h1></div>`
   );
   $(".projects").append(project)
 });
 
+$("#project-four a").text('Training')
+const add_button = $("<a href=https://www.loom.com/share/76a9607ead83413b89f57648c1961e24 target=_blank id=guide-button>Guides</a>")
+$("#project-four").append(add_button)
+
 $("#project-one-image").hover(function(){
         $(this).fadeOut(750, function(){
             $("#project-one-problem-solution").fadeIn(750);
-            $("#project-one-problem-solution").css('opacity', '1');
+            // $("#project-one-problem-solution").css('opacity', '1');
         });
 })
 
 $("#project-one-problem-solution").mouseleave(function(){
     $(this).fadeOut(750, function(){
-        $("#project-one-problem-solution").css('opacity', '0');
+        // $("#project-one-problem-solution").css('opacity', '0');
         $("#project-one-image").fadeIn(750);
     })
 })
 
 
 $("#project-two-image").hover(function(){
-    $(this).fadeOut(750, function(){
-        $("#project-two-problem-solution").fadeIn(750);
-        $("#project-two-problem-solution").css('opacity', '1');
-    });
+  $(this).fadeOut(750, function(){
+      $("#project-two-problem-solution").fadeIn(750);
+      // $("#project-one-problem-solution").css('opacity', '1');
+  });
 })
 
 $("#project-two-problem-solution").mouseleave(function(){
 $(this).fadeOut(750, function(){
-    $("#project-two-problem-solution").css('opacity', '0');
-    $("#project-two-image").fadeIn(750);
+  // $("#project-one-problem-solution").css('opacity', '0');
+  $("#project-two-image").fadeIn(750);
 })
 })
 
 
 $("#project-three-image").hover(function(){
-    $(this).fadeOut(750, function(){
-        $("#project-three-problem-solution").fadeIn(750);
-        $("#project-three-problem-solution").css('opacity', '1');
-    });
+  $(this).fadeOut(750, function(){
+      $("#project-three-problem-solution").fadeIn(750);
+      // $("#project-one-problem-solution").css('opacity', '1');
+  });
 })
 
 $("#project-three-problem-solution").mouseleave(function(){
 $(this).fadeOut(750, function(){
-    $("#project-three-problem-solution").css('opacity', '0');
-    $("#project-three-image").fadeIn(750);
+  // $("#project-one-problem-solution").css('opacity', '0');
+  $("#project-three-image").fadeIn(750);
 })
 })
 
 
 
 $("#project-four-image").hover(function(){
-    $(this).fadeOut(750, function(){
-        $("#project-four-problem-solution").fadeIn(750);
-        $("#project-four-problem-solution").css('opacity', '1');
-    });
+  $(this).fadeOut(750, function(){
+      $("#project-four-problem-solution").fadeIn(750);
+      // $("#project-one-problem-solution").css('opacity', '1');
+  });
 })
 
 $("#project-four-problem-solution").mouseleave(function(){
 $(this).fadeOut(750, function(){
-    $("#project-four-problem-solution").css('opacity', '0');
-    $("#project-four-image").fadeIn(750);
+  // $("#project-one-problem-solution").css('opacity', '0');
+  $("#project-four-image").fadeIn(750);
 })
 })
 
