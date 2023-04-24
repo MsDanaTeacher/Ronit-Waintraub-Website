@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../images/logo.png"
+      sizes="16x32"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <script src="../index.js" defer></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+    ></script>
+    <script
+      src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+      integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function() {
+          // https://dashboard.emailjs.com/admin/account
+          emailjs.init('gRLymLw7yp_CalvEN');
+      })();
+  </script>
+  <script type="text/javascript">
+    window.onload = function() {
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // generate a five digit number for the contact_number variable
+            this.contact_number.value = Math.random() * 100000 | 0;
+            // these IDs from the previous steps
+            emailjs.sendForm('hsbuq152*1', 'contact_form', this)
+                .then(function() {
+                    console.log('SUCCESS!');
+                }, function(error) {
+                    console.log('FAILED...', error);
+                });
+            document.getElementById('thank_you').style.display = 'block';
+            $("#thank_you").stop(true, true).fadeOut(2200);
+            this.reset()
+        });
+    }
+</script>
+  </head>
+  <body>
+    <header>
+      <a href="../index.html"><img src="../images/logo.png" id="logo" /></a>
+      <ul class="nav">
+        <li class="navlink"><a href="../index.html">Home</a></li>
+        <li class="navlink"><a href="about.html">About</a></li>
+        <li class="navlink"><a href="portfolio.html">Portfolio</a></li>
+        <li class="navlink"><a href="contact.html">Contact</a></li>
+        <a
+          href="https://www.linkedin.com/in/ronit-waintraub-a92264262/"
+          target="_blank"
+          ><img src="../images/LI-In-Bug.png" id="linkedin-mobile"
+        /></a>
+      </ul>
+      <a
+        href="https://www.linkedin.com/in/ronit-waintraub-a92264262/"
+        target="_blank"
+        ><img src="../images/LI-In-Bug.png" id="linkedin"
+      /></a>
+      <div class="burger">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+    <div class="contact-section">
+      <h1>Let's Connect!</h1>
+      <img src="../images/contactpageblob.png" id="contact-page-image"/>
+      <p>
+        To have a conversation, please fill out the form below,<br />send me an
+        e-mail, or reach out to me on LinkedIn.
+      </p>
+      <form id="contact-form">
+        <input type="hidden" name="contact_number">
+        <div class="contact-inputs">
+          <div>
+            <label>First name *</label>
+            <br />
+            <input type="text" name="first_name"required/>
+            <br />
+            <label>Email *</label>
+            <br />
+            <input type="email" name="user_email" required/>
+          </div> 
+          <div>
+            <label>Last name *</label>
+            <br />
+            <input type="text" name="last_name" required/>
+         </div>
+        </div>
+        <label>Message</label>
+        <br />
+        <textarea id="message-input" name="message"></textarea>
+        <br />
+        <!-- <button>Submit</button> -->
+        <input type="submit" value="Send" id="submit-button">
+      </form>
+      <br/>
+      <div id="thank_you" style="display: none;">
+        <p>Thanks for filling up the form!</p>
+      </div>
+    </div>
+    <footer>
+      <img src="../images/logo.png" id="footer-logo" />
+      <ul class="footer-nav">
+        <li class="footer-navlink"><a href="../index.html">Home</a></li>
+        <li class="footer-navlink"><a href="about.html">About</a></li>
+        <li class="footer-navlink"><a href="portfolio.html">Portfolio</a></li>
+        <li class="footer-navlink"><a href="contact.html">Contact</a></li>
+      </ul>
+      <p>Site design by Dana Lobell Dev</p>
+    </footer>
+  </body>
+</html>
