@@ -120,8 +120,8 @@ $(".burger i").click(function () {
 //     burger.classList.toggle('fa-bars');
 //     burger.classList.toggle('fa-times');
 // }
-$("#hero-h2").delay(4000).fadeTo(500, 1);
-$(".hero div a").delay(4000).fadeTo(500, 1);
+// $("#hero-h2").delay(4000).fadeTo(500, 1);
+// $(".hero div a").delay(4000).fadeTo(500, 1);
 
 //map divs to portfolio page:
 
