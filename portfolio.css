@@ -275,6 +275,37 @@ html,
 
 
 @media screen and (max-width: 1024px) and (min-width: 769px){
+    .portfolio-section {
+        /* border: 2px solid pink; */
+        background-size: 120% 100%; 
+    }
+    .projects {
+        width: 88vw;
+        margin-top: 50px;
+    }
+    #project-one-headline {
+        width: 57vw;
+        top: 895px;
+        right: 426px;
+        color: white;
+    }
+    #project-two-headline {
+        width: 65vw;
+        font-size: 72px;
+        right: 30px;
+        top: 325px;
+    }
+    #project-three-headline {
+        font-size: 97px;
+        right: 424px;
+        top: 1620px;
+        color: #5B5B4C;
+    }
+    #project-four-headline {
+        font-size: 120px;
+        right: -11px;
+        top: 950px;
+    }
 }
 
 
