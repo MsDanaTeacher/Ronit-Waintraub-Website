@@ -1,0 +1,127 @@
+@import "header.css";
+@import "footer.css";
+@import "style.css";
+
+/* CONTACT SECTION */
+.contact-section {
+    background-color: white;
+    min-height: 85vh;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
+    width: 100vw;
+    margin-left: 12%;
+}
+
+.contact-section h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100vw;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 55px;
+    margin-top: 1.3em;
+    color: #97797F;
+    animation: revealText 1s ease forwards;
+}
+
+.contact-section p {
+    margin: 0;
+    top: 120px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #666;
+    font-size: 24px;
+    animation: revealText 1s ease forwards;
+}
+
+form {
+    margin-top: 8em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #666;
+    font-size: 16px;
+    width: 100vw;
+    position: absolute;
+    z-index: 9;
+    animation: revealText 1s ease forwards;
+}
+
+@keyframes revealText {
+    0% {
+      opacity: 0;
+      transform: translateY(40%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+form input {
+    border-radius: 20px;
+    border: 1px solid #97797F;
+    background-color: white;
+    opacity: 49%;
+}
+form label {
+    margin-left: 15px;
+}
+.contact-inputs {
+    display: flex;
+    justify-content: space-between;
+    width: 70vw;
+}
+
+.contact-inputs input{
+    padding: 10px 20px 10px 20px;
+    height: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 30vw;
+}
+
+#message-input {
+    height: 150px;
+    width: 70vw;
+    border: 1px solid #97797F;
+    opacity: 49%;
+    border-radius: 25px;
+    padding: 15px 20px 15px 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#submit-button {
+    background-color: #3f3f31;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 25px;
+    padding: .5% 1.5% .5% 1.5%;
+    width: 10vw;
+}
+
+#submit-button:hover{
+    color: black;
+}
+
+#thank_you p {
+    padding-top: 570px;
+    color: #A6A5A5;
+    font-size: 16px;
+}
+.contact-section p {
+    position: absolute;
+    top: 270px;
+    z-index: 9;
+}
+#contact-page-image {
+    margin-right: 4em;
+    width: 60vw;
+    max-height: 95vh;
+    float: right;
+}

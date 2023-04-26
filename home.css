@@ -1,0 +1,540 @@
+@import "header.css";
+@import "footer.css";
+@import "style.css";
+
+/* HOME PAGE */
+html,
+  body {
+    overflow-x: hidden;
+  }
+  body {
+    max-width: 100vw;
+  }
+
+.hero {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80vw;
+  height: calc(98vh - 100px);
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero div {
+  /* border: 2px solid blue; */
+  width: 50%;
+}
+.hero h1 {
+  font-size: 4em;
+  color: #97797f;
+  white-space: nowrap; /* Keeps the content on a single line */
+  font-family: "Playfair Display", serif;
+  margin-bottom: 0;
+}
+
+.hero h1,
+h2,
+a {
+  animation: revealText 1s ease forwards;
+}
+
+.hero h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: #666;
+  font-size: 1.5em;
+  margin-bottom: 2em;
+}
+
+@keyframes revealText {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+.hero img {
+  /* border: 2px solid blue; */
+  width: auto;
+  height: 100%;
+  max-height: 100%;
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  bottom: 0;
+}
+.hero a {
+  background-color: #cdbacd;
+  border: none;
+  border-radius: 25px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  color: white;
+  font-size: 1em;
+  padding: 1.5%;
+  padding-left: 4%;
+  padding-right: 4%;
+  width: 11vw;
+  text-decoration: none;
+}
+
+.hero a:hover {
+  color: black;
+}
+
+/* TESTIMONIALS */
+.testimonials {
+  background-color: #5b5b4c;
+  width: 100vw;
+  height: 80vh;
+  z-index: 9;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: white;
+}
+
+.testimonials h2 {
+  font-weight: 700;
+  font-size: 40px;
+  margin: 0;
+  padding-top: 25px;
+  text-align: center;
+}
+
+.testimonials p {
+  width: 25vw;
+  height: 90%;
+}
+
+.testimonials-div {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.testimonials-div div {
+  opacity: 0;
+  transform: translateY(50%);
+  animation: revealText 1s ease forwards;
+}
+
+.testimonials-div div:first-of-type {
+  margin-bottom: 200px;
+}
+
+.testimonials-div div:last-of-type {
+  margin-bottom: 200px;
+}
+
+.review {
+  margin-left: 40px;
+}
+#quote-one {
+  font-family: "Nova Cut", cursive;
+  font-size: 100px;
+  height: 3vh;
+  /* display: inline-block; */
+  margin: 0;
+  color: white;
+}
+
+#quote-two {
+  font-family: "Nova Cut", cursive;
+  font-size: 100px;
+  height: 3vh;
+  /* display: inline-block; */
+  margin: 0;
+  color: #cdbacd;
+}
+
+#quote-three {
+  font-family: "Nova Cut", cursive;
+  font-size: 100px;
+  height: 3vh;
+  /* display: inline-block; */
+  margin: 0;
+  color: #97797f;
+}
+
+.review-name {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 20px;
+  margin: 0;
+  margin-left: 40px;
+  text-align: center;
+}
+
+.signature {
+  text-align: center;
+  font-family: "Moon Dance", cursive;
+  font-size: 40px;
+  margin: 0;
+  margin-left: 40px;
+}
+
+/* SECTION */
+.home-contact {
+  background-color: #97797f;
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.home-contact img {
+  height: 95%;
+  margin-top: 1.3%;
+  margin-left: 15%;
+}
+
+.home-contact h2 {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.home-contact a {
+  background-color: #5b5b4c;
+  border: none;
+  border-radius: 25px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  color: white;
+  font-size: 20px;
+  padding: 1.5%;
+  padding-left: 8%;
+  padding-right: 8%;
+  text-decoration: none;
+}
+
+.home-contact a:hover {
+  color: black;
+}
+
+.section-div {
+  width: 90vw;
+  margin-right: 10%;
+  z-index: 9;
+  opacity: 0;
+  transform: translateY(50%);
+  animation: revealSectionText 1s ease forwards;
+}
+
+@keyframes revealText {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes revealSectionText {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.reveal {
+  animation: revealText 1s ease forwards;
+}
+
+.reveal-section {
+  animation: revealText 1s ease forwards;
+}
+
+@media screen and (max-width: 1200px) {
+  .hero {
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hero {
+    width: 90%;
+    /* border: 2px solid red; */
+  }
+  .hero div {
+    margin-left: 1em;
+  }
+  .hero h1 {
+    font-size: 3.7em;
+  }
+  .hero h2 {
+    font-size: 1.3em;
+  }
+  .hero img {
+    width: auto;
+    height: 95%;
+    max-width: 95%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    width: 100vw;
+    margin: auto;
+    height: 60vh;
+  }
+  .hero div {
+    margin-left: 2.5em;
+  }
+  .hero h1 {
+    font-size: 3em;
+  }
+  .hero h2 {
+    font-size: 1.2em;
+  }
+  .hero img {
+    width: auto;
+    height: 100%;
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    z-index: -1;
+  }
+
+
+
+  .testimonials {
+    /* border: 2px solid red; */
+    width: 100vw;
+    height: 100%;
+    font-size: 18px;
+  }
+
+.testimonials h2 {
+    padding-top: 2em;
+    margin-bottom: 1em;
+}
+.testimonials-div {
+    flex-direction: column;
+    width: 90vw;
+}
+
+.testimonials-div div{
+    margin-bottom: 0%;
+}
+
+.testimonials-div div:first-of-type{
+    margin-bottom: 4em;
+}
+
+.testimonials-div div:last-of-type{
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+.testimonials-text {
+    margin-bottom: 4em;
+    width: 95vw;
+}
+  .testimonials p {
+    width: 90vw;
+    padding-right: 1em;
+  }
+
+  .home-contact img {
+    margin-top: 2.3%;
+    margin-left: 11%;
+  }
+
+  .home-contact h2 {
+    font-size: 19px;
+    width: 100%;
+  }
+
+  .home-contact a {
+    background-color: #5b5b4c;
+    border: none;
+    border-radius: 25px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    color: white;
+    font-size: 16px;
+    padding: 1.5%;
+    padding-left: 8%;
+    padding-right: 8%;
+    text-decoration: none;
+  }
+
+  .home-contact a:hover {
+    color: black;
+  }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  body {
+    max-width: 100vw;
+  }
+  .hero {
+    /* border: 2px solid red; */
+    width: 100vw;
+  }
+  .hero div {
+    margin-left: 1em;
+  }
+  .hero h1 {
+    font-size: 2.5em;
+  }
+  .hero h2 {
+    font-size: 1em;
+  }
+  .hero img {
+    width: auto;
+    height: 88%;
+    left: 85px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  /* TESTIMONIALS */
+
+  .testimonials {
+    height: 100%;
+  }
+
+  .testimonials h2 {
+    padding-top: 2.2em;
+  }
+  .testimonials p {
+    width: 80vw;
+    height: 90%;
+    font-size: 0.8em;
+    padding-right: 0.5em;
+  }
+
+  .testimonials-div {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .testimonials-div div:first-of-type {
+    margin-bottom: 2em;
+  }
+
+  .testimonials-div div:last-of-type {
+    margin-bottom: 2em;
+  }
+
+  .testimonials-text {
+    margin-bottom: 2em;
+  }
+  .testimonials-div div {
+    opacity: 0;
+    transform: translateY(50%);
+    animation: revealText 1s ease forwards;
+  }
+
+  .review {
+    margin-left: 40px;
+  }
+  #quote-one {
+    font-family: "Nova Cut", cursive;
+    font-size: 90px;
+    height: 3vh;
+    /* display: inline-block; */
+    margin: 0;
+    color: white;
+  }
+
+  #quote-two {
+    font-size: 80px;
+    height: 3vh;
+    padding-top: 0.5em;
+  }
+
+  #quote-three {
+    font-family: "Nova Cut", cursive;
+    font-size: 100px;
+    height: 3vh;
+    /* display: inline-block; */
+    margin: 0;
+    color: #97797f;
+  }
+  .signature {
+    font-size: 1.5em;
+  }
+
+  /* SECTION */
+
+
+  .home-contact {
+    height: 40vw;
+  }
+
+  .home-contact img {
+    width: 45%;
+    height: auto;
+    margin-top: 8%;
+    margin-left: 8%;
+  }
+
+  .home-contact h2 {
+    font-size: 15px;
+    width: 100%;
+  }
+
+  .home-contact a {
+    background-color: #5b5b4c;
+    border: none;
+    border-radius: 25px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    color: white;
+    font-size: 10px;
+    padding: 1.5%;
+    padding-left: 8%;
+    padding-right: 8%;
+    text-decoration: none;
+  }
+
+  .home-contact a:hover {
+    color: black;
+  }
+
+  .section-div {
+    width: 100%;
+    z-index: 9;
+    opacity: 0;
+    animation: revealSectionText 1s ease forwards;
+  }
+}

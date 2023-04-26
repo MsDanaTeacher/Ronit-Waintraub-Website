@@ -130,7 +130,7 @@ $(".burger i").click(function () {
 
 $.each(projects, function (key, value) {
   let project = $(
-    `<div style="border: 25px solid ${value.color};background-color: ${value.color};" class="portfolio-outer-div"><div id=${key} class="project-tiles" style="background-color: ${value.color};"><p style="color: ${value.textcolor}">${value.name}</p><div class="portfolio-image-div"><img src=${value.image} id=${key + "-image"} /><p id=${key + "-problem-solution"} style="display: none">${value.problem}<br/><br/>${value.solution}</p></div><a href=${value.link} target="_blank" style="background-color: ${value.color}">Learn More</a></div><h1 id=${key + "-headline"}>${value.tech}</h1></div>`
+    `<div style="border: 25px solid ${value.color};background-color: ${value.color};" class="portfolio-outer-div"><div id=${key} class="project-tiles" style="background-color: ${value.color};"><p style="color: ${value.textcolor}">${value.name}</p><div class="portfolio-image-div"><img src=${value.image} id=${key + "-image"} /><p id=${key + "-problem-solution"} style="display: none">${value.problem}<br/><br/>${value.solution}</p></div><a href=${value.link} target="_blank" style="background-color: ${value.color}">Learn More</a></div><div><h1 id=${key + "-headline"}>${value.tech}</h1></div></div>`
   );
   $(".projects").append(project)
 });
@@ -199,3 +199,61 @@ $(this).fadeOut(750, function(){
 })
 })
 
+$(window).scroll(function() {
+  $('.testimonials-div').each(function() {
+    if ($(this).isInViewport()) {
+      $(this).addClass('reveal');
+    }
+  });
+});
+
+$(window).scroll(function() {
+  $('.section-div').each(function() {
+    if ($(this).isInViewport()) {
+      $(this).addClass('reveal-section');
+    }
+  });
+});
+
+$(window).scroll(function() {
+  $('.about-2').each(function() {
+    if ($(this).isInViewport()) {
+      $(this).addClass('reveal-about-two');
+    }
+  });
+});
+
+$(window).scroll(function() {
+  $('.about-3').each(function() {
+    if ($(this).isInViewport()) {
+      $(this).addClass('reveal-about-three');
+    }
+  });
+});
+
+$(window).scroll(function() {
+  $('.about-4').each(function() {
+    if ($(this).isInViewport()) {
+      $(this).addClass('reveal-about-four');
+    }
+  });
+});
+
+$(window).scroll(function() {
+  $('.about-button').each(function() {
+    if ($(this).isInViewport()) {
+      $(this).addClass('reveal-about-button');
+    }
+  });
+});
+
+
+$.fn.isInViewport = function() {
+  var elementTop = $(this).offset().top;
+  var elementBottom = elementTop + $(this).outerHeight();
+
+  var viewportTop = $(window).scrollTop();
+  var viewportBottom = viewportTop + $(window).height();
+
+  return elementBottom > viewportTop && elementTop < viewportBottom;
+};
