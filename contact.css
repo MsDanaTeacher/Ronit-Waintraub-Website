@@ -202,6 +202,12 @@ form label {
     .footer-nav {
         margin-bottom: 0%;
     }
+    #thank_you p {
+        padding-top: 550px;
+    }
+    #submit-button:hover {
+        color: white;
+    }
 }
 
 
@@ -216,7 +222,7 @@ form label {
     }
     .contact-section h1 {
         font-size: 40px;
-
+        margin-top: 1.3em;
     }
 
     .contact-section p {
@@ -262,11 +268,12 @@ form label {
         font-size: 17px;
     }
     .contact-inputs {
-        width: 100%;
+        width: 87%;
+        margin-left: 1.8em;
         justify-content: space-around;
     }
     .contact-inputs input {
-        width: 36vw;
+        width: 34.5vw;
     }
     #footer-logo {
         margin-left: 225px;
