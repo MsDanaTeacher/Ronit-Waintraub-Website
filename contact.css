@@ -13,7 +13,7 @@ html,
 /* CONTACT SECTION */
 .contact-section {
     background-color: white;
-    min-height: 85vh;
+    height: 100vh;
     margin-bottom: 0;
     padding-bottom: 0;
     border-bottom: 0;
@@ -126,15 +126,18 @@ form label {
     position: absolute;
     top: 270px;
     z-index: 9;
+    width: 55%;
 }
 #contact-page-image {
-    margin-right: 4em;
-    width: 60vw;
-    max-height: 95vh;
+    width: 75vw;
+    height: 90.9vh;
     float: right;
 }
 
-
+#footer-logo {
+    margin-left: 45%;
+    margin-right: 45%;
+}
 
 @media screen and (max-width: 1200px) and (min-width: 1025px){
     .contact-section {
