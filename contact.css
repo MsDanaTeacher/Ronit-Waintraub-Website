@@ -145,7 +145,25 @@ form label {
 
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) and (min-width: 769px){
+    .contact-section {
+        /* border: 2px solid green; */
+        height: 100vh; 
+    }
+    .contact-section p {
+        z-index: 1;
+        width: 80%;
+    }
+    #contact-page-image {
+        margin-right: 0;
+        height: 90vh;
+        width: 80%;
+    }
+    #footer-logo {
+        margin-left: 225px;
+        margin-right: 236px;
+    }
+
 }
 
 
