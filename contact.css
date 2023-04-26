@@ -155,7 +155,7 @@ form label {
 
 @media screen and (max-width: 768px) and (min-width: 481px) {
     .contact-section {
-        border: 2px solid green;
+        /* border: 2px solid green; */
         height: 100vh;
     }
 
