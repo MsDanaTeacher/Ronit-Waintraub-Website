@@ -11,6 +11,7 @@ html,
   }
 
 /* CONTACT SECTION */
+
 .contact-section {
     background-color: white;
     height: 100vh;
@@ -138,7 +139,21 @@ form label {
     margin-left: 45%;
     margin-right: 45%;
 }
+#email-anchor {
+    text-decoration: none; 
+    color: #97797F; 
+}
+#email-anchor:hover {
+    color: #3f3f31; 
+}
 
+#linkedin-anchor {
+    text-decoration: none; 
+    color: #97797F; 
+}
+#linkedin-anchor:hover {
+    color: #3f3f31; 
+}
 @media screen and (max-width: 1200px) and (min-width: 1025px){
     .contact-section {
         /* border: 2px solid green; */
@@ -269,6 +284,7 @@ form label {
         padding-right: 8%;
         font-size: 18px;
         z-index: 1;
+        width: 80%;
     }
 
     #contact-page-image {
