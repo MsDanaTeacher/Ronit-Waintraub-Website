@@ -281,6 +281,56 @@ html,
 
 
 @media screen and (max-width: 768px) and (min-width: 481px) {
+    .portfolio-section {
+        /* border: 2px solid pink; */
+        background-size: 120% 100%; 
+    }
+    .portfolio-section h1 {
+        font-size: 50px;
+    }
+    .portfolio-section p {
+        width: 80%;
+        font-size: 20px;
+        margin-top: 1em;
+    }
+    .projects {
+        justify-content: center;
+        margin-top: 50px;
+    }
+    #project-one-headline {
+        /* display: none; */
+        /* border: 10px solid orange; */
+        color:#5B5B4C;
+        right: 0px;
+        width: 76vw;
+        margin-top: 0;
+        top: 330px;
+        right: 150px;
+        z-index: 1;
+    }
+
+    #project-one-headline::first-letter {
+       color: white;
+    }
+
+    #project-two-headline {
+        /* display: none; */
+        top: 0px;
+        top: 962px;
+        right: 50px;
+        width: 76vw;
+    }
+    #project-three-headline {
+        /* display: none; */
+        right: 300px;
+        color: white;
+        top: 1530px;
+    }
+    #project-four-headline {
+        /* display: none; */
+        top: 2110px;
+        right: 100px;
+    }
 }
 
 
