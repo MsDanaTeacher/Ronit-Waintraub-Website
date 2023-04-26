@@ -44,7 +44,6 @@ footer p {
     color: white;
     font-size: .6em;
     font-family: 'Open Sans', sans-serif;
-    float: right;
-    margin-top: 7px;
-    margin-right: 10px;
+    text-align: center;
+    margin-top: 18px;
 }
