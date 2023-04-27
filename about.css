@@ -406,10 +406,11 @@ body {
     background-image: url("./images/aboutpagemobilebackground.png");
   background-size: 350vh;
   width: 100vw;
-  height: 240vh;
+  /* height: 240vh; */
   /* height: auto; */
-  overflow: hidden;
+  overflow-x: hidden;
   overflow: scroll;
+  margin: 0;
   }
   .about-section h1 {
     font-size: 35px;
@@ -425,14 +426,14 @@ body {
   margin: 0;
   font-size: 40px;
   top: 40px;
-  left: 1em;
+  left: .5em;
   position: relative;
   color: white;
   z-index: 1;
 }
 .about-me {
   margin: 0;
-  height: 100vh;
+  /* height: 100vh; */
 }
 #about-1 {
   width: 90%;
@@ -455,7 +456,5 @@ body {
   width: 50vw;
   font-size: 12px;
 }
-footer {
-  min-height: 30vh;
-}
+
 }

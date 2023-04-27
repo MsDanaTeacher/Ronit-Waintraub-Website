@@ -476,34 +476,39 @@ a {
   .hero {
     /* border: 2px solid red; */
     width: 100vw;
+    height: auto;
   }
   .hero div {
     margin-left: 1em;
   }
   .hero h1 {
     font-size: 2.5em;
+    margin-top: 1.5em;
   }
   .hero h2 {
     font-size: 1em;
   }
   .hero img {
-    width: auto;
-    height: 88%;
-    left: 90px;
-    position: absolute;
+    width: 60%;
+    height: auto;
+    left: 160px;
     right: 0;
     bottom: 0;
     z-index: -1;
   }
 
+  #hero-h2 {
+    margin-bottom: 1em;
+  }
   /* TESTIMONIALS */
 
   .testimonials {
-    height: 100%;
+    width: 100vw;
+    height: auto;
   }
 
   .testimonials h2 {
-    padding-top: 2.2em;
+    padding-top: 1em;
   }
   .testimonials p {
     width: 80vw;
@@ -515,6 +520,7 @@ a {
   .testimonials-div {
     width: 100%;
     flex-direction: column;
+    height: auto;
   }
 
   .testimonials-div div:first-of-type {
