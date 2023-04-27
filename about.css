@@ -18,9 +18,9 @@ html,
     background-image: url("./images/aboutpagebackground.png");
     background-size: contain;
     background-repeat: no-repeat;
-    background-size: 100% 180vh;
+    background-size: 100% 210vh;
     width: 100vw;
-    height: 180vh;
+    height: 200vh;
 }
 .about-section h1 {
     margin-top: 0;
@@ -118,7 +118,7 @@ html,
 #second-about-img {
     /* position: absolute; */
     position: absolute;
-  top: 65%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
     width: 35%;
@@ -139,7 +139,7 @@ html,
     /* left: 9%; */
     margin: 0;
     margin-left: 160px;
-    margin-top: 330px;
+    margin-top: 460px;
     font-family: 'Playfair Display', serif;
     color: white;
     font-size: 80px;
@@ -149,7 +149,7 @@ html,
 }
 
 .about-me {
-    margin-top: 450px;
+    margin-top: 580px;
 }
 
 .about-section div {
@@ -210,6 +210,34 @@ html,
 
 
 @media screen and (max-width: 1200px) and (min-width: 1025px){
+  .about-section {
+    /* border: 2px solid red; */
+    background-size: 110% 260vh;
+    width: 100vw;
+    height: 230vh;
+  /* height: auto; */
+  }
+  .about-section h2 {
+    margin-top: 6em;
+    margin-left: 1em;
+
+  }
+  .about-section div p{
+    width: 80%;
+  }
+  #about-1 {
+    padding-top: 2em;
+    }
+    #second-about-img {
+      top: 600px;
+      width: 45%;
+      }
+      #about-button-id{
+        margin: 0;
+        margin-bottom: 1em;
+        margin-left: 6em;
+        margin-top: 2%;
+        }
 }
 
 
@@ -217,6 +245,80 @@ html,
 
 
 @media screen and (max-width: 1024px) and (min-width: 769px){
+  html,
+body {
+  overflow-x: hidden;
+}
+body {
+  max-width: 100vw;
+}
+header {
+  margin-bottom: 2em;
+}
+.about-section {
+  background-image: url("./images/aboutpagemobilebackground.png");
+  background-size: 300vh;
+  width: 100vw;
+  height: 200vh;
+  /* height: auto; */
+  overflow: hidden;
+  overflow: scroll;
+}
+.about-section h1 {
+  font-size: 52px;
+  margin-top: 1.5em;
+  color: white;
+}
+#second-about-img {
+top: 200px;
+width: 45%;
+position: relative;
+}
+.about-section h2 {
+margin: 0;
+/* margin-left: .5em; */
+text-align: center;
+font-size: 70px;
+top: 10px;
+position: relative;
+color: white;
+z-index: 1;
+}
+.about-section div {
+  width: 85%;
+  margin: 0%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about-me {
+margin: 0;
+height: 100vh;
+}
+#about-1 {
+width: 90%;
+font-size: 18px;
+padding-top: 3em;
+}
+.about-4 {
+  margin-bottom: 2em;
+  padding-bottom: 3%;
+}
+.about-section div p{
+width: 90%;
+font-size: 18px;
+padding-top: 0;
+}
+.about-button {
+margin: 0%;
+margin-top: 5%;
+}
+#about-button-id{
+margin: 0;
+margin-bottom: 1em;
+margin-left: 3.5em;
+width: 50vw;
+font-size: 12px;
+}
 }
 
 
@@ -231,9 +333,7 @@ body {
 body {
   max-width: 100vw;
 }
-.about-section {
-  /* border: 2px solid red; */
-}
+
 .about-section {
   background-image: url("./images/aboutpagemobilebackground.png");
   background-size: 300vh;
