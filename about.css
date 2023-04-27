@@ -336,9 +336,9 @@ body {
 
 .about-section {
   background-image: url("./images/aboutpagemobilebackground.png");
-  background-size: 300vh;
+  background-size: 200vh;
   width: 100vw;
-  height: 200vh;
+  height: 190vh;
   /* height: auto; */
   overflow: hidden;
   overflow: scroll;
