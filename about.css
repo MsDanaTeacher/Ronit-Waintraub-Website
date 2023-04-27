@@ -398,17 +398,16 @@ font-size: 12px;
 html,
 body {
   overflow-x: hidden;
-  overflow-y: scroll;
 }
 body {
   max-width: 100vw;
 }
   .about-section {
     background-image: url("./images/aboutpagemobilebackground.png");
-  background-size: 370vh;
-  /* width: 100vw; */
-  height: 100vh;
-  width: auto;
+  background-size: 350vh;
+  width: 100vw;
+  height: 240vh;
+  /* height: auto; */
   overflow: hidden;
   overflow: scroll;
   }
@@ -455,8 +454,5 @@ body {
   margin-left: 2em;
   width: 50vw;
   font-size: 12px;
-}
-footer {
-  height: auto;
 }
 }
