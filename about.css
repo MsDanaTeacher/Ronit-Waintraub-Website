@@ -393,7 +393,7 @@ font-size: 12px;
 
 
 
-@media screen and (max-width: 480px) and (min-width: 320px) and (orientation: portrait){
+@media only screen and (max-width: 480px) and (min-width: 320px) and (orientation: portrait){
 
 html,
 body {
@@ -454,5 +454,9 @@ body {
   margin-left: 2em;
   width: 50vw;
   font-size: 12px;
+}
+footer {
+  position: absolute;
+  bottom: 0;
 }
 }
