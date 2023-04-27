@@ -456,7 +456,7 @@ body {
   font-size: 12px;
 }
 footer {
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
 }
 }
