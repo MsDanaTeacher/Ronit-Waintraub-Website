@@ -618,4 +618,7 @@ a {
     padding-bottom: 0;
     height: 30vh;
   }
+  #footer-logo {
+    margin-top: 20%;
+  }
 }
