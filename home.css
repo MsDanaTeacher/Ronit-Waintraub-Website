@@ -535,9 +535,12 @@ a {
     margin-bottom: .7em;
   }
   .testimonials-div div {
-    opacity: 0;
-    transform: translateY(50%);
-    animation: revealText 1s ease forwards;
+    /* opacity: 0; */
+    /* transform: translateY(50%); */
+    /* animation: revealText 1s ease forwards; */
+  }
+  .reveal {
+    animation: none;
   }
 
   .review {
@@ -610,8 +613,8 @@ a {
   .section-div {
     width: 100%;
     z-index: 9;
-    opacity: 0;
-    animation: revealSectionText 1s ease forwards;
+    /* opacity: 0; */
+    /* animation: revealSectionText 1s ease forwards; */
   }
   footer {
     margin-bottom: 0;
