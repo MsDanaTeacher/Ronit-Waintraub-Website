@@ -496,6 +496,9 @@ a {
     bottom: 0;
     z-index: -1;
   }
+  .hero div a {
+    font-size: .5em;
+  }
 
   /* TESTIMONIALS */
 
@@ -504,7 +507,8 @@ a {
   }
 
   .testimonials h2 {
-    padding-top: 2.2em;
+    padding-top: .7em;
+    margin-bottom: 0;
   }
   .testimonials p {
     width: 80vw;
@@ -524,10 +528,11 @@ a {
 
   .testimonials-div div:last-of-type {
     margin-bottom: 2em;
+    margin-top: 2em;
   }
 
   .testimonials-text {
-    margin-bottom: 2em;
+    margin-bottom: .7em;
   }
   .testimonials-div div {
     opacity: 0;
@@ -550,7 +555,7 @@ a {
   #quote-two {
     font-size: 80px;
     height: 3vh;
-    padding-top: 0.5em;
+    /* padding-top: 0.5em; */
   }
 
   #quote-three {
@@ -607,5 +612,9 @@ a {
     z-index: 9;
     opacity: 0;
     animation: revealSectionText 1s ease forwards;
+  }
+  footer {
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 }
