@@ -468,16 +468,15 @@ a {
 @media screen and (max-width: 480px) {
   html,
   body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
     overflow-x: hidden;
   }
   body {
     max-width: 100vw;
   }
-  
+  .hero {
+    /* border: 2px solid red; */
+    width: 100vw;
+  }
   .hero div {
     margin-left: 1em;
   }
@@ -499,6 +498,9 @@ a {
 
   /* TESTIMONIALS */
 
+  .testimonials {
+    height: 100%;
+  }
 
   .testimonials h2 {
     padding-top: 2.2em;
@@ -511,6 +513,7 @@ a {
   }
 
   .testimonials-div {
+    width: 100%;
     flex-direction: column;
   }
 
@@ -519,7 +522,7 @@ a {
   }
 
   .testimonials-div div:last-of-type {
-    margin-bottom: 4em;
+    margin-bottom: 2em;
   }
 
   .testimonials-text {
@@ -599,6 +602,7 @@ a {
   }
 
   .section-div {
+    width: 100%;
     z-index: 9;
     opacity: 0;
     animation: revealSectionText 1s ease forwards;
