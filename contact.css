@@ -334,4 +334,12 @@ form label {
     .footer-nav {
         margin-bottom: 0%;
     }
+    footer {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        height: 30vh;
+      }
+      #footer-logo {
+        margin-top: 10%;
+      }
 }
