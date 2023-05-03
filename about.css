@@ -419,6 +419,7 @@ body {
     margin-top: 0;
     color: white;
     padding-top: 1em;
+    width: 90vw;
 }
 #second-about-img {
   top: 120px;
@@ -427,7 +428,7 @@ body {
 }
 .about-section h2 {
   margin: 0;
-  font-size: 30px;
+  font-size: 40px;
   top: 40px;
   left: .5em;
   position: relative;
