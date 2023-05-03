@@ -425,6 +425,10 @@ html,
     .project-tiles a {
         position: relative;
     }
+    #guide-button {
+        position: relative;
+        padding-bottom: 10px;
+    }
     #project-one-headline {
         display: none;
     }
