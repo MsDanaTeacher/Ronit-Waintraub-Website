@@ -455,6 +455,7 @@ body {
 .about-button {
   margin: 0%;
   margin-top: 3%;
+  padding-bottom: 20px;
 }
 #about-button-id{
   margin: 0;
