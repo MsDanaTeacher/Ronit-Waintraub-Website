@@ -135,7 +135,7 @@ $.each(projects, function (key, value) {
   $(".projects").append(project)
 });
 
-$("#project-four a").text('Training')
+$("#project-four a").text('Training').attr('id', 'training-button');
 const add_button = $("<a href=https://www.loom.com/share/76a9607ead83413b89f57648c1961e24 target=_blank id=guide-button>Guides</a>")
 $("#project-four").append(add_button)
 
