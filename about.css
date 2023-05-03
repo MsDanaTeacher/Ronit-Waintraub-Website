@@ -420,6 +420,7 @@ body {
     color: white;
     padding-top: 1em;
     width: 90vw;
+    text-align: center;
 }
 #second-about-img {
   top: 120px;
@@ -428,9 +429,10 @@ body {
 }
 .about-section h2 {
   margin: 0;
-  font-size: 40px;
+  font-size: 35px;
   top: 40px;
-  left: .5em;
+  /* left: .5em; */
+  text-align: center;
   position: relative;
   color: white;
   z-index: 1;
