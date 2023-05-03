@@ -407,6 +407,7 @@ body {
     background-image: url("./images/aboutpagemobilebackground.png");
   background-size: 350vh;
   width: 100vw;
+  height: auto;
   /* height: 240vh; */
   /* height: auto; */
   /* overflow-x: hidden; */
@@ -415,8 +416,9 @@ body {
   }
   .about-section h1 {
     font-size: 35px;
-    margin-top: 1.5em;
+    margin-top: 0;
     color: white;
+    padding-top: 1em;
 }
 #second-about-img {
   top: 120px;
