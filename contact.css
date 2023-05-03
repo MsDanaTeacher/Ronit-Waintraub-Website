@@ -345,6 +345,9 @@ form label {
         height: 30vh;
       }
       #footer-logo {
+        margin: 0;
         margin-top: 10%;
+        margin-left: 5%;
+        margin-right: 5%;
       }
 }
