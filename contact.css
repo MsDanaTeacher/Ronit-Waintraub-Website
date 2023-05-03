@@ -267,6 +267,11 @@ form label {
 
 
 @media screen and (max-width: 480px) and (min-width: 320px){
+    html,
+  body {
+    overflow-x: hidden;
+  }
+
     .contact-section {
         margin-left: 0;
         text-align: center;
@@ -289,7 +294,7 @@ form label {
 
     #contact-page-image {
         margin-right: 0;
-        height: 91.9vh;
+        height: 93.6vh;
         width: 91%;
     }
 

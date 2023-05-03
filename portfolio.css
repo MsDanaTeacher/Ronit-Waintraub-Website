@@ -216,10 +216,6 @@ html,
     width: 55vw;
 }
 
-#project-two-headline::first-letter {
-    color: #5B5B4C;
-}
-
 #project-three-headline {
     font-family: 'Playfair Display', serif;
     color: #97797F;
@@ -380,7 +376,7 @@ html,
         top: 0px;
         top: 962px;
         right: 50px;
-        width: 76vw;
+        width: 82vw;
     }
     #project-three-headline {
         /* display: none; */
