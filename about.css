@@ -410,7 +410,7 @@ body {
   /* height: 240vh; */
   /* height: auto; */
   /* overflow-x: hidden; */
-  overflow: scroll;
+  /* overflow: scroll; */
   margin: 0;
   }
   .about-section h1 {
