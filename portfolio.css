@@ -425,13 +425,20 @@ html,
     .project-tiles a {
         position: relative;
     }
+    .portfolio-image-div {
+        margin-top: 0;
+    }
+    
+    .project-tiles {
+        left: 32%;
+    }
     #guide-button {
         position: relative;
         top: 0;
         bottom: 0;
         left: 0;
         right: 0;
-        left: 14px;
+        left: 8%;
     top: -35px;   
     padding: 8px 22px;
  }
