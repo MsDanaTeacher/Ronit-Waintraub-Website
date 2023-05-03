@@ -415,7 +415,7 @@ body {
   margin: 0;
   }
   .about-section h1 {
-    font-size: 35px;
+    font-size: 30px;
     margin-top: 0;
     color: white;
     padding-top: 1em;
@@ -427,7 +427,7 @@ body {
 }
 .about-section h2 {
   margin: 0;
-  font-size: 40px;
+  font-size: 30px;
   top: 40px;
   left: .5em;
   position: relative;
