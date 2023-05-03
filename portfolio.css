@@ -422,6 +422,9 @@ html,
     .project-tiles p:first-child {
         position: relative;
     }
+    .project-tiles a {
+        position: relative;
+    }
     #project-one-headline {
         display: none;
     }
