@@ -139,7 +139,7 @@ html,
     /* left: 9%; */
     margin: 0;
     margin-left: 160px;
-    margin-top: 460px;
+    margin-top: 490px;
     font-family: 'Playfair Display', serif;
     color: white;
     font-size: 80px;
@@ -149,7 +149,7 @@ html,
 }
 
 .about-me {
-    margin-top: 580px;
+    margin-top: 600px;
 }
 
 .about-section div {
