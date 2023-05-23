@@ -77,7 +77,7 @@ const projects = {
     image: "../images/homebuying.png",
     link: "https://360.articulate.com/review/content/de24286f-891f-46e8-a2c0-1d70f8ca32e1/review",
     problem:
-      "Banks needed more people to apply for mortgages and close on homes successfully after the covid housing boom.",
+      "Problem: Banks needed more people to apply for mortgages and close on homes successfully after the covid housing boom.",
     solution:
       "Solution: An e-learning course that takes you through the most essential parts of house hunting and that guides first-time homebuyers in learning how to land a home successfully.",
     color: "#5B5B4C",
